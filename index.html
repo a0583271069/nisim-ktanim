@@ -19,7 +19,16 @@ h1,.title,.loc h3{font-family:Heebo,Assistant,Arial,sans-serif;font-weight:700}
 .bsd{font-size:18px;font-weight:600;color:var(--olive);letter-spacing:.03em;line-height:1.1;margin-bottom:2px}
 .note{text-align:center;font-size:17px;font-weight:600;color:#6b6957;margin:28px 16px 0}
 .park{font-size:.85em;font-weight:500;margin-top:-6px}
-.hours{text-align:center;font-size:16px;font-weight:600;color:#6b6957;margin:12px 0 0}</style></head><body>
+.hours{text-align:center;font-size:16px;font-weight:600;color:#6b6957;margin:12px 0 0}
+main > section.booking{background:var(--cream)}
+main > section#testimonials{background:var(--paper)}
+#testimonials[hidden]{display:none}
+.tst-list{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:28px auto 0;text-align:right}
+.tst-item{margin:0;padding:22px 24px;background:#fff;border-top:3px solid var(--gold);border-radius:8px;box-shadow:0 3px 12px rgba(4,64,77,.07)}
+.tst-item blockquote{margin:0;font-size:clamp(18px,1.5vw,21px);font-weight:600;line-height:1.7}
+.tst-item figcaption{margin-top:12px;font-size:16px;font-weight:700;color:var(--olive)}
+.tst-item img{display:block;width:100%;height:auto;border-radius:6px}
+@media(max-width:700px){.tst-list{grid-template-columns:1fr}}</style></head><body>
 <header class="top">
 <div class="wrap nav">
 <div class="brand">
@@ -73,6 +82,18 @@ h1,.title,.loc h3{font-family:Heebo,Assistant,Arial,sans-serif;font-weight:700}
 </div>
 <p>אני עוסק בתחום העיסוי מאז 2010. בארבע השנים האחרונות אני עובד במכבי טבעי.</p>
 <p>בתקופה האחרונה התמקדתי בעיסוי השיקומי, מתוך הבנה שבדרך זו אני יכול לסייע למטופלים בצורה הטובה ביותר.</p>
+</div>
+</section>
+<section id="testimonials" hidden>
+<div class="wrap center">
+<h2 class="title">המלצות מטופלים</h2>
+<div class="divider">
+</div>
+<div class="tst-list">
+<!-- להוספת המלצה: להוסיף פריט כאן ולמחוק את התכונה hidden מהתגית section.
+     טקסט:    <figure class="tst-item"><blockquote>הטקסט</blockquote><figcaption>— ד., בני ברק</figcaption></figure>
+     תמונה:   <figure class="tst-item"><img src="testimonials/1.png" alt="המלצת מטופל"></figure> -->
+</div>
 </div>
 </section>
 <section class="booking">
